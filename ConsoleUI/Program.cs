@@ -10,7 +10,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            ProductTest();
+            //ProductTest();
             //CategoryTest();
             //ProductSelfServiceTest();
 
@@ -18,33 +18,34 @@ namespace ConsoleUI
 
         }
 
-        private static void ProductSelfServiceTest()
-        {
-            ProductManager productManager = new ProductManager(new EfProductDal());
+        //private static void ProductSelfServiceTest()
+        //{
+        //    ProductManager productManager = new ProductManager(new EfProductDal());
 
-            var result = productManager.isThatExisting(78);
+        //    var result = productManager.isThatExisting(1);
+            
+            
+        //}
 
-            Console.WriteLine(result.ToString());
-        }
+        //private static void CategoryTest()
+        //{
+        //    CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
 
-        private static void CategoryTest()
-        {
-            CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
-
-            foreach (var category in categoryManager.GetAll())
-            {
-                Console.WriteLine(category.CategoryName);
-            }
-        }
+        //    foreach (var category in categoryManager.GetAll())
+        //    {
+        //        Console.WriteLine(category.CategoryName);
+        //    }
+        //}
 
         private static void ProductTest()
         {
-            ProductManager productManager = new ProductManager(new EfProductDal());
+            //ProductManager productManager = new ProductManager(new EfProductDal());
 
-            foreach (var item in productManager.GetProductDetails())
-            {
-                Console.WriteLine(item.ProductName + " " + item.CategoryName);
-            }
+            //foreach (var item in productManager.GetProductDetails().Data)
+            //{
+            //    Console.WriteLine(item.ProductName + " " + item.CategoryName);
+            //}
+            //Console.WriteLine(productManager.GetProductDetails().Message);
         }
     }
 }
