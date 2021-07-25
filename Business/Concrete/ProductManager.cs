@@ -40,8 +40,12 @@ namespace Business.Concrete
         {
             // iş kodları
             // Yetkisi Var mı ?
-            // Tüm Kontroller Bitti mi ?            
-            return new SuccessDataResult<List<Product>>(_productDal.GetAll(),Messages.ProductsListed);
+            // Tüm Kontroller Bitti mi ?
+
+
+            return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.ProductsListed);
+           //return new ErrorDataResult<List<Product>>("Ürün Yok...");
+            
         }
         
         public IDataResult<List<Product>> GetAllByCategoryId(int id)

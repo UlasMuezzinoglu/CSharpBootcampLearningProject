@@ -15,6 +15,7 @@ namespace Business.Constants
 
         // Product Manager Messages
         public static string ProductAdded = "Ürün Eklendi";
+        public static string ProductDoesntAdded = "Ürün Eklenemedi";
         public static string ProductNameInvalid = "Ürün ismi eçersiz";
         public static string ProductsListed = "Ürünler Listelendi";
         public static string ProductsListedByCategoryId = "Ürün Kategoriye Göre Listelendi";
