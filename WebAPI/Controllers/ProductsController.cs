@@ -14,7 +14,7 @@ namespace WebAPI.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Merhabalaaaaar";
+            return "Çalıştıııı";
         }
     }
 }
