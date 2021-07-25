@@ -33,8 +33,8 @@ namespace WebAPI
             //Autofac, Ninject, CastleWindsor, StructurMap, LightInject, DryInject --> IoC Container
             //AOP --> bir metotun önünde sonunda hata verdiðinde çalýþan kod parçacýklarý
             services.AddControllers();
-            services.AddSingleton<IProductService,ProductManager>();
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService,ProductManager>();
+            //services.AddSingleton<IProductDal, EfProductDal>();
 
             services.AddSwaggerGen(c =>
             {
