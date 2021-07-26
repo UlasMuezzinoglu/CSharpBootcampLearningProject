@@ -23,9 +23,12 @@ namespace Business.Constants
         public static string ProductsListedByUnitPrice = "Ürün Birim Fiyatına Göre Listelendi";
         public static string ProductDoesNotExisting = "Böyle Bir Ürün Yok";
         public static string ProductIsExisting = "Ürün var";
+        public static string CategoryOverflowError = "Ürün Eklenemedi... Kategoride ki Maksimum Ürün Sayısına Ulaşıldı";
+        public static string SameNameError = "Bu ürün adı zaten kullanılıyor.";
+        public static string CategoryLimitExceded = "Kategori Sayısı 15 den fazla iken ürün eklenemez.";
         // End of Product Messages
 
-        // Category Manager Messages
+        // Category Manager Messages 
         //
         // End of Category Manager Messages
     }

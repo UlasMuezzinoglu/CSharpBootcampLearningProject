@@ -17,11 +17,14 @@ namespace Business.Abstract
         IDataResult<Product> GetById(int id);
         IDataResult<List<Product>> GetByUnitPrice(decimal min, decimal max);
         IDataResult<List<ProductDetailDto>> GetProductDetails();
-        bool isThatExisting(int id);
-
-        IResult Add(Product product);
-
+       
 
         
+        IResult Add(Product product);
+        IResult Update(Product product);
+        IResult Delete(Product product);
+
+
+
     }
 }
