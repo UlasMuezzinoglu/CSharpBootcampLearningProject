@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,6 +13,7 @@ namespace Business.Constants
 
         // System Messages
         public static string MaintenanceTime = "Sistem Bakımda";
+        public static string AuthorizationDenied = "Yetkiniz Yok";
         // End of System Messages
 
         // Product Manager Messages
@@ -26,6 +29,12 @@ namespace Business.Constants
         public static string CategoryOverflowError = "Ürün Eklenemedi... Kategoride ki Maksimum Ürün Sayısına Ulaşıldı";
         public static string SameNameError = "Bu ürün adı zaten kullanılıyor.";
         public static string CategoryLimitExceded = "Kategori Sayısı 15 den fazla iken ürün eklenemez.";
+        public static string UserRegistered = "Kullanıcı Kayıt Edildi";
+        public static string UserNotFound = "Kullanıcı Bulunamadı";
+        public static string PasswordError = "Parola Hatası";
+        public static string SuccessfulLogin = "Başarılı Giriş";
+        public static string UserAlreadyExists = "Kullanıcı Zaten Var";
+        public static string AccessTokenCreated = "Erişim Tokeni Oluşturuldu";
         // End of Product Messages
 
         // Category Manager Messages 
