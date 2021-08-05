@@ -59,7 +59,6 @@ namespace Business.Concrete
             // Yetkisi Var mı ?
             // Tüm Kontroller Bitti mi ?
 
-
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.ProductsListed);
             //return new ErrorDataResult<List<Product>>("Ürün Yok...");
 
